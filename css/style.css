@@ -1,0 +1,26 @@
+body{
+    margin:0;
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url('../font/Kanit-Medium.ttf') format('truetype');
+    /* You can also include other font-related properties here, such as font-weight and font-style */
+}
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity:1 ;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 7rem;
+    font-family: kanit;
+    
+    
+    
+}
