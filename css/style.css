@@ -7,7 +7,13 @@ body{
     src: url('../font/Kanit-Medium.ttf') format('truetype');
     /* You can also include other font-related properties here, such as font-weight and font-style */
 }
-img{
+
+.main_pages{
+    width: 100vw;
+    height: 100vh;
+}
+
+#img_1{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -16,11 +22,26 @@ img{
 
 .text{
     position: absolute;
-    top: 50%;
-    left: 40%;
-    font-size: 7rem;
+    top: 60%;
+    left: 60%;
+    font-size: 8rem;
     font-family: kanit;
-    
-    
+    color: antiquewhite;
+}
+#skill_container{
+    /* background-color: black; */
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+
+.in_box{
+    width: calc(50% - 10px);
+    border-radius: 2rem;
     
 }
