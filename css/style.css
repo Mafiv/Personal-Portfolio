@@ -1,6 +1,7 @@
 body{
     margin:0;
     overflow-x: hidden;
+    background-color:#26355D;
 }
 
 @font-face {
@@ -20,12 +21,29 @@ body{
     display: flex;
     flex-direction: row;
     flex: 1;
-    background-color: rgb(52, 155, 73);    
+    background-color:#26355D;
     justify-content: center;
     padding-top: 5%;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 1px;
+    transform: translateX(100px);
+    animation: slide-in 1s ease-out forwards;
+    
+    }
+    
+    @keyframes slide-in {
+    0% {
+    transform: translateX(-100%);   
+    }
+    100% {
+    transform: translateX(100);
+    }
+    }
+    
+.main_pages.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 #img_1{
@@ -50,11 +68,11 @@ body{
     padding: 10%;
     box-sizing: border-box;
     border-radius: 5%;
-    background-color:aqua ;
+    background-color:#124076 ;
     text-align: center;
-    /* font-size: 2rem; */
     font-family: kanit;
     color:white;
+    transition: transform 0.3s ease;
 }
 
 #img2{
@@ -68,14 +86,18 @@ body{
 .box_sev{
     width: 40%;
     margin: 1%;
-    background-color: aqua;
+    background-color: #124076 ;
+    color: wheat;
     padding: 2rem;
     font-size: 1.2rem;
     text-align: center ;
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+    
 }
 
 .project_sample{
-    background-color: rgb(120, 61, 191);
+    background-color: #124076;
     width: 28%;
     height: 41%;
     margin: 1%;
@@ -89,7 +111,7 @@ body{
 .adress{
     width: 40%;
     margin: 1%;
-    background-color: red;
+    background-color: #0C2D57;
     padding: 1%;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -98,7 +120,7 @@ body{
 }
 .reference{
     width: 50%;
-    background-color: yellow;
+    background-color: #124076;
     margin: 1%;
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +129,7 @@ body{
 
 .small_parts{
     width: 30%;
-    background-color: greenyellow;
+    background-color: #0C2D57;
 
 
     
@@ -170,7 +192,7 @@ body{
   }
 
   #info_edu{
-    background-color: #36c2c7;
+    background-color: #124076;
     font-size: 1.5rem;
     padding: 2rem 3rem;
     font-size: 2rem;
@@ -191,10 +213,11 @@ body{
     height: 100%;
 }
   
-  .project_sample:hover {
+  .project_sample:hover,.box_sev:hover ,.box_es:hover{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   } 
+
 
   .small_parts img:hover {
     transform: translateY(-10px);
