@@ -1,17 +1,18 @@
-import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { Skills } from "@/components/skills"
-import { Experience } from "@/components/experience"
-import { Projects } from "@/components/projects"
-import { Education } from "@/components/education"
-import { Contact } from "@/components/contact"
-import { Footer } from "@/components/footer"
-import type { Metadata } from "next"
+import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
+import { Skills } from "@/components/skills";
+import { Experience } from "@/components/experience";
+import { Projects } from "@/components/projects";
+import { Education } from "@/components/education";
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Abraham Demsew - UI/UX Designer & Frontend Developer",
-  description: "Portfolio of Abraham Demsew, UI/UX Designer and Frontend Developer based in Ethiopia",
-}
+  title: "Miraf Amare - Fullstack Developer & UI/UX Designer",
+  description:
+    "Portfolio of Miraf Amare,Fullstack Developer and UI/UX Designer",
+};
 
 export default function Home() {
   return (
@@ -27,5 +28,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
